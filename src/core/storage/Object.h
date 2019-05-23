@@ -9,6 +9,7 @@ class Object
 {
   public:
     Object();
+    ~Object();
     std::Vector<std::string> components;
     std::string name;
     std::string role;
