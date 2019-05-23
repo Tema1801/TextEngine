@@ -1,13 +1,16 @@
-#ifndef ENGINE_H
-#define ENGINE_H
+#ifndef API_H
+#define API_H
 #include <string>
 //include h files
 
-class Engine
+class API
 {
+  API();
+  Engine engine;
   void addObject();
   void deleteObject();
-  void addComponentToObject(std::string objectName, std::string componentType);
+  void addComponent(std::string objectName, std::string componentType);
+  void changeComponent(std::string objectName, std::string componentType);
 };
 
-#ENDIF //ENGINE_H
+#ENDIF //API_H
