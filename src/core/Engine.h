@@ -7,7 +7,7 @@ class Engine
 {
   void addObject();
   void deleteObject();
-  void addComponentToObject(std::string objectName, std::string componentName);
+  void addComponentToObject(std::string objectName, std::string componentType);
 };
 
 #ENDIF //ENGINE_H
