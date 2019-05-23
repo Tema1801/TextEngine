@@ -9,9 +9,10 @@ class Object
 {
   public:
     Object();
-    std::vector<std::string> components;
+    std::Vector<std::string> components;
     
-  
+};
+    
   
 
 
