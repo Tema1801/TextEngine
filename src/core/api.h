@@ -10,7 +10,7 @@ class API
   void addObject();
   void deleteObject();
   void addComponent(std::string objectName, std::string componentType);
-  void changeComponent(std::string objectName, std::string componentType);
+  void changeComponent(std::string objectName, std::string componentType, std::string componentName);
 };
 
 #ENDIF //API_H
