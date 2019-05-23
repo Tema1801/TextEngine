@@ -21,10 +21,6 @@ void API::addComponent(std::string objectName, std::string componentType)
   {
     engine.datastorage->object[objectName].components.push_back(new Script)
   }
-  if (componentType == "Info")
-  {
-    engine.datastorage->object[objectName].components.push_back(new Info)
-  }
 }
 
 void API::changeComponent(std::string objectName, std::string componentType, std::string componentName)
@@ -33,10 +29,5 @@ void API::changeComponent(std::string objectName, std::string componentType, std
   {
     engine.datastorage->object[objectName].components.erase(std::remove(vec.begin(), vec.end(), componentName), vec.end())
     engine.datastorage->object[objectName].components.push_back(new Script)
-  }
-  if (componentType == "Info")
-  {
-    engine.datastorage->object[objectName].components.erase(std::remove(vec.begin(), vec.end(), componentName), vec.end())
-    engine.datastorage->object[objectName].components.push_back(new Info)
   }
 }
