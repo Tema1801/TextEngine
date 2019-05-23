@@ -5,14 +5,14 @@ API::API()
 
 }
 
-void API::addObject()
+void API::addObject(std::string objName)
 {
-  engine.dataStorage->add_object();
+  engine.dataStorage->add_object(std::string objName);
 }
 
 void API::deleteObject()
 {
-  engine.dataStorage->delete_object();
+  engine.dataStorage->delete_object(std::string objName);
 }
 
 void API::addComponent(std::string objectName, std::string componentType)
