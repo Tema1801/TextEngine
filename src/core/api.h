@@ -7,8 +7,8 @@ class API
 {
   API();
   Engine engine;
-  void addObject();
-  void deleteObject();
+  void addObject(std::string objectName);
+  void deleteObject(std::string objectName);
   void addComponent(std::string objectName, std::string componentType);
   void changeComponent(std::string objectName, std::string componentType, std::string componentName);
 };
