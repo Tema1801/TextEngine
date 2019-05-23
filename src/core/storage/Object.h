@@ -21,6 +21,7 @@ class Object
     int atk_power;
     int atk_range;
     int effect;
+    void showData(std::string objName);
     
 };
     
