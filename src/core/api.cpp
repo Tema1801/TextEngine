@@ -12,7 +12,7 @@ void API::addObject(std::string objectName)
 
 void API::deleteObject()
 {
-  engine.dataStorage->delete_object(oobjectName);
+  engine.dataStorage->delete_object(objectName);
 }
 
 void API::addComponent(std::string objectName, std::string componentType)
