@@ -11,6 +11,7 @@ class Engine:
   ~Engine();
   DataStorage* dataStorage;
   LogicManager* logicManager;
+  mainWhile();
   
 }
 
