@@ -15,47 +15,47 @@ Script::~Script()
 
 void attack(Object target)
 {
-  int distance = abs(object.position - target.position);
-  if (distance <= object.range)
+  int distance = abs(position - target.position);
+  if (distance <= range)
   {
-    target.health -= object.power;
+    target.health -= power;
   }
 }
 
 void move(int value)
 {
-  object.position = value;
+  position += value;
 }
 
 
 
 void tactic(Object player)
 {
-  int distance = abs(object.position - player.position);
-  if ((object.range <= distance) && (object.health > 3))
+  int distance = abs(position - player.position);
+  if ((range <= distance) && (health > 3))
   {
-    object->attack(player);
+    attack(player);
   }
-  else if ((object.range > distance) && (object.health > 3))
+  else if ((range > distance) && (health > 3))
   {
-    if (object.position > player.position)
+    if (position > player.position)
     {
-      object->move(-1);
+      move(-1);
     }
     else
     {
-      object->move(1);
+      move(1);
     }
   }
-  else if (object.health < 3)
+  else if (health < 3)
   {
-    if (object.position > player.position)
+    if (position < player.position)
     {
-      object->move(1);
+      move(1);
     }
     else
     {
-      object->move(-1);
+      move(-1);
     }
   }
 }
