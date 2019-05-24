@@ -1,13 +1,14 @@
 #ifndef SCRIPT_H
 #define SCRIPT_H
 //#include
-
+class Object;
 
 class Script
 {
   public:
     Script();
     ~Script();
+    Object object;
     virtual void startScripts();
     virtual void repeatedScripts();
     void attack(Object target);
