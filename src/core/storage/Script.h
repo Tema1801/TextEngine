@@ -8,8 +8,8 @@ class Script: public Object
   public:
     Script();
     ~Script();
-    void startScripts();
-    void repeatedScripts();
+    virtual void startScripts();
+    virtual void repeatedScripts();
 
   
 };
