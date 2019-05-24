@@ -1,5 +1,7 @@
 #ifndef SCRIPT_H
 #define SCRIPT_H
+
+#include "../api.h"
 //#include
 
 
