@@ -8,8 +8,9 @@ class Script: public Object
   public:
     Script();
     ~Script();
-    void attack(std::string atkName, std::string tgtName);
-    void command(sf::Event event);
+    void startScripts();
+    void repeatedScripts();
+
   
 };
 
