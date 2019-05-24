@@ -3,7 +3,7 @@
 //#include
 
 
-class Script: public Object
+class Script
 {
   public:
     Script();
