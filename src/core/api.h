@@ -10,8 +10,12 @@ class API
   void addObject(std::string objectName);
   void deleteObject(std::string objectName);
   int findObject(std::string objectName);
-  int getStat(std::string objectName, std::string statName);
-  void setstat(std::string objectName, std::string statName, int value);
+  int getPosition(std::string objectName);
+  void setPosition(std::string objectName, int value);
+  int getHealth(std::string objectName);
+  void setHealth(std::string objectName, int value);
+  int getPower(std::string objectName);
+  int getRange(std::string objectName);
 };
 
 #ENDIF //API_H
