@@ -10,10 +10,10 @@ class Script: public Object
     ~Script();
     virtual void startScripts();
     virtual void repeatedScripts();
-    void attack(std::string atkName, std::string tgtName);
-    void move(std::string Name, int value);
-    void command(std::string Name, sf::Event event);
-    void enemyTactic(std::string atkName, std::string tgtName);
+    void attack(Object attacker, Object target);
+    void move(Object object, int value);
+    void command(Object object, int numbert);
+    void enemyTactic(Object attacker, Object target);
 
   
 };
