@@ -12,6 +12,8 @@ Script::~Script()
   
 }
 
+
+
 void startScripts()
 {
   health = 10;
@@ -21,5 +23,5 @@ void startScripts()
 }
 void repeatedScripts()
 {
-  //
+  tactic(objects[API.findObject("Player")]);
 }
