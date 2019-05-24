@@ -1,7 +1,7 @@
 #include "Script.h"
 #include "../api.h"
 
-API API;
+
 
 Script::Script()
 {
@@ -13,53 +13,49 @@ Script::~Script()
   
 }
 
-void attack(std::string atkName, std::string tgtName)
+void attack(Object target)
 {
-  int distance = abs(API.getPosition(atkName) - API.getPosition(tgtName));
-  if (distance <= API.getRange(atkName))
+  int distance = abs(position - target.position);
+  if (distance <= range)
   {
-    API.setHealth(tgtName, API.getHealth(tgtName) - API.getPower(atkName));
+    target.health -= power;
   }
 }
 
-void move(std::string Name, int value)
+void move(int value)
 {
-  API.setPosition(std::string objectName, value)
-}
-
-void command(std::string Name, sf::Event event)
-{
-  
+  position = value;
 }
 
 
-void enemyTactic(std::string atkName, std::string tgtName)
+
+void tactic(Object player)
 {
-  int distance = abs(API.getPosition(atkName) - API.getPosition(tgtName));
+  int distance = abs(position - player.position);
   if ((range <= distance) && (health > 3))
   {
     attack(atkName,tgtName);
   }
   else if ((range > distance) && (health > 3))
   {
-    if (API.getPosition(atkName) > API.getPosition(tgtName))
+    if (position > player.position)
     {
-      move(atkName, -1);
+      move(-1);
     }
     else
     {
-      move(atkName, 1);
+      move(1);
     }
   }
   else if (health < 3)
   {
-    if (API.getPosition(atkName) > API.getPosition(tgtName))
+    if (position > player.position)
     {
-      move(atkName, 1);
+      move(1);
     }
     else
     {
-      move(atkName, -1);
+      move(-1);
     }
   }
 }
