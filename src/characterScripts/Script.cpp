@@ -31,3 +31,46 @@ void command(std::string Name, sf::Event event)
 {
   
 }
+
+
+void enemyTactic(std::string atkName, std::string tgtName)
+{
+  int distance = abs(API.getPosition(atkName) - API.getPosition(tgtName));
+  if ((range <= distance) && (health > 3))
+  {
+    attack(atkName,tgtName);
+  }
+  else if ((range > distance) && (health > 3))
+  {
+    if (API.getPosition(atkName) > API.getPosition(tgtName))
+    {
+      move(atkName, -1);
+    }
+    else
+    {
+      move(atkName, 1);
+    }
+  }
+  else if (health < 3)
+  {
+    if (API.getPosition(atkName) > API.getPosition(tgtName))
+    {
+      move(atkName, 1);
+    }
+    else
+    {
+      move(atkName, -1);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
