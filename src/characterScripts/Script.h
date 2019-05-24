@@ -11,6 +11,7 @@ class Script: public Object
     Script();
     ~Script();
     void attack(std::string atkName, std::string tgtName);
+    void move(std::string Name, int value);
     void command(sf::Event event);
   
 };
