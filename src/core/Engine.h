@@ -1,11 +1,15 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-//#include
+#include <SFML/Graphics.hpp>
 
-//class ;
+#include "storage/Script.h"
+#include "storage/Object.h"
+#include "storage/DataStorage.h"
+#include "management/EventManager.h"
 
-class Engine:
+
+class Engine
 {
   Engine();
   ~Engine();
@@ -14,6 +18,6 @@ class Engine:
   void showActions();
   void mainWhile();
   
-}
+};
 
 #endif //ENGINE_H
