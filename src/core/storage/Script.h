@@ -9,7 +9,7 @@ class Script:
   public:
     Script();
     ~Script();
-    void contact();
+    void attack(std::string atkName, std::string tgtName);
     void command(sf::Event event);
   
 };
