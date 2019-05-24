@@ -15,6 +15,11 @@ void API::deleteObject(std::string objectName)
   engine.dataStorage->delete_object(objectName);
 }
 
+int API::findObject(std::string objectName)
+{
+  return engine.dataStorage->find_object(objectName);
+}
+
 void API::addComponent(std::string objectName, std::string componentType)
 {
   if (componentType == "Script")
