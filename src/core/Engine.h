@@ -10,7 +10,7 @@ class Engine:
   Engine();
   ~Engine();
   DataStorage* dataStorage;
-  LogicManager* logicManager;
+  EventManager* eventManager;
   void showActions();
   void mainWhile();
   
