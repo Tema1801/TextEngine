@@ -10,10 +10,9 @@ class Script: public Object
     ~Script();
     virtual void startScripts();
     virtual void repeatedScripts();
-    void attack(Object attacker, Object target);
-    void move(Object object, int value);
-    void command(Object object, int number);
-    void enemyTactic(Object attacker, Object target);
+    void attack(Object target);
+    void move(int value);
+    void tactic(Object player);
 
   
 };
