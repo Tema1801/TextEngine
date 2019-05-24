@@ -19,3 +19,41 @@ int API::findObject(std::string objectName)
 {
   return engine.dataStorage->find_object(objectName);
 }
+
+int getPosition(std::string objectName)
+{
+  object num = engine.dataStorage->find_object(objectName);
+  return engine.dataStorage->objects[num].position;
+}
+
+int setPosition(std::string objectName, int value)
+{
+  object num = engine.dataStorage->find_object(objectName);
+  engine.dataStorage->objects[num].position = value;
+}
+
+int getHealth(std::string objectName)
+{
+  object num = engine.dataStorage->find_object(objectName);
+  return engine.dataStorage->objects[num].health;
+}
+
+int setHealth(std::string objectName, int value)
+{
+  object num = engine.dataStorage->find_object(objectName);
+  engine.dataStorage->objects[num].health = value;
+}
+
+int getPower(std::string objectName)
+{
+  object num = engine.dataStorage->find_object(objectName);
+  return engine.dataStorage->objects[num].power;
+}
+
+
+int getRange(std::string objectName)
+{
+  object num = engine.dataStorage->find_object(objectName);
+  return engine.dataStorage->objects[num].range;
+}
+
