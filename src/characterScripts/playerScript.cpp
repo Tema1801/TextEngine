@@ -1,6 +1,7 @@
 #include "Script.h"
 #include "../core/api.h"
 
+API API;
 
 Script::Script()
 {
@@ -21,5 +22,18 @@ void startScripts()
 }
 void repeatedScripts()
 {
-  //
+  // не забыть вставить int catchEvents()
+  
+  if (n == 1)
+  {
+    position += 0;
+  }
+  else if (n == 2)
+  {
+    position -= 0;
+  }
+  else if (n == 3)
+  {
+    attack(objects[API.findObject("Enemy")]);;
+  }
 }
