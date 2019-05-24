@@ -12,6 +12,7 @@ class Engine:
   DataStorage* dataStorage;
   LogicManager* logicManager;
   void mainWhile();
+  void showActions();
   
 }
 
