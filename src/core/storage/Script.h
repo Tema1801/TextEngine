@@ -2,9 +2,8 @@
 #define SCRIPT_H
 //#include
 
-class Components;
 
-class Script:
+class Script: public Object
 {
   public:
     Script();
