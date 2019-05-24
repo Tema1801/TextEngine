@@ -21,7 +21,7 @@ class Object
     int power;
     int range;
     int effect;
-    void showData(std::string objName);
+    void showData();
     
 };
     
