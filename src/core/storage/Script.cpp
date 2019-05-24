@@ -34,7 +34,7 @@ void tactic(Object player)
   int distance = abs(position - player.position);
   if ((range <= distance) && (health > 3))
   {
-    attack(atkName,tgtName);
+    attack(player);
   }
   else if ((range > distance) && (health > 3))
   {
