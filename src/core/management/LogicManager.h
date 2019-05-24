@@ -7,8 +7,8 @@ class LogicManager
 {
   LogicManager();
   sf::Event event;
-  void chooseScripts();
-  void executeScripts();
+  void playerScripts(int n);
+  void enemyScripts();
 }
 
 
