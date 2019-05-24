@@ -9,9 +9,7 @@ int main{
   API API;
   
   API.addObject("Player");
-  API.addComponent("Player", "PlayerScript");
   API.addObject("Enemy");
-  API.addComponent("Enemy", "EnemyScript");
   
   API.engine.mainWhile();
   
