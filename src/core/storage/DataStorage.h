@@ -12,7 +12,7 @@ class DataStorage
     ~DataDtorage();
     std::Vector<Object> objects;
     void add_object(std::string objectName);
-    void find_object(std::string objectName);
+    int find_object(std::string objectName);
     void delete_object(std::string objectName);
 
 };
