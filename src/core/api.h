@@ -1,7 +1,13 @@
 #ifndef API_H
 #define API_H
 #include <string>
-//include h files
+
+#include "storage/Script.h"
+#include "storage/Object.h"
+#include "storage/DataStorage.h"
+#include "Engine.h"
+
+
 
 class API
 {
