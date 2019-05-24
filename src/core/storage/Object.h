@@ -18,8 +18,8 @@ class Object
     std::Vector<std::string> actions;
     int position;
     int health;
-    int atk_power;
-    int atk_range;
+    int power;
+    int range;
     int effect;
     void showData(std::string objName);
     
