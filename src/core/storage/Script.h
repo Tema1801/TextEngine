@@ -12,7 +12,7 @@ class Script: public Object
     virtual void repeatedScripts();
     void attack(Object attacker, Object target);
     void move(Object object, int value);
-    void command(Object object, int numbert);
+    void command(Object object, int number);
     void enemyTactic(Object attacker, Object target);
 
   
