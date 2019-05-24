@@ -1,8 +1,12 @@
 #include "engine.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
 
 Engine::Engine()
 {
-  //logics
+
 }
 
 Engine::~Engine()
@@ -10,15 +14,31 @@ Engine::~Engine()
 
 }
 
+void showActions()
+{
+  std::string output;
+  std::ifstream file;
+  file.open("../file.txt");
+  while(file >> output)
+  {
+    std::cout << output << endl;
+  }
+  file.close();
+  
+}
+
+
 void Engine::mainWhile()
 {
   bool game_state = true;
   while(game_state)
   {
     
-    //player's turn: actions colected by eventmanager
-    //updating statuses(health etc) 
-    //enemy's turn: based on logic and scripts
-    //updating statuses(health etc)
+    dataStorage.showData("Player");
+    dataStorage.showData("Enemy");
+    showActions();
+    //updating stats
+    
+
   }
 }
