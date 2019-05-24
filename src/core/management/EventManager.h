@@ -2,7 +2,7 @@
 #define EVENTMANAGER_H
 #include "SFML/Graphics.hpp"
 
-class EventManager:
+class EventManager
 {
   EventManager();
   sf::Event event;
