@@ -18,4 +18,4 @@ class API
   int getRange(std::string objectName);
 };
 
-#ENDIF //API_H
+#endif //API_H
