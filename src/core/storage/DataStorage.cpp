@@ -34,6 +34,6 @@ int find_object(std::string objectName)
 
 void delete_object(std::string objectName)
 {
-  Object new_object;
-  objects.push_back(new_object);
+  n = objects.find_object(objectName);
+  objects.erase(objects.begin() + n)	
 }
