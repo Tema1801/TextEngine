@@ -16,11 +16,11 @@ Object::~Object()
 
 }
 
-void showData(std::string objName)
+void showData()
 {
-  std::cout << "Name " << object.name <<std::endl;
-  std::cout << "Health " << object.health <<std::endl;
-  std::cout << "Position "<< object.position << std::endl;
-  std::cout << "Attack power "<< object.power << std::endl;
-  std::cout << "Attack range "<< object.range << std::endl;
+  std::cout << "Name " << name <<std::endl;
+  std::cout << "Health " << health <<std::endl;
+  std::cout << "Position "<< position << std::endl;
+  std::cout << "Attack power "<< power << std::endl;
+  std::cout << "Attack range "<< range << std::endl;
 };
