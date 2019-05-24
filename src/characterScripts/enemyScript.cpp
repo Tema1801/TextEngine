@@ -1,7 +1,7 @@
 #include "Script.h"
 #include "../core/api.h"
 
-
+API API;
 Script::Script()
 {
   
