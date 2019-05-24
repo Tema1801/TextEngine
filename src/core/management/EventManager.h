@@ -5,7 +5,6 @@
 class EventManager
 {
   EventManager();
-  sf::Event event;
   int checkEvents();
 }
 
