@@ -8,7 +8,6 @@ class Script: public Object
   public:
     Script();
     ~Script();
-    Object object;
     virtual void startScripts();
     virtual void repeatedScripts();
     void attack(Object target);
