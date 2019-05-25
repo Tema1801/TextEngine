@@ -26,11 +26,11 @@ void repeatedScripts()
   
   if (n == 1)
   {
-    position += 0;
+    position += 1;
   }
   else if (n == 2)
   {
-    position -= 0;
+    position -= 1;
   }
   else if (n == 3)
   {
