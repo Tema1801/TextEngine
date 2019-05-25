@@ -22,7 +22,7 @@ void startScripts()
 }
 void repeatedScripts()
 {
-  // не забыть вставить int catchEvents()
+  int n = engine->eventnager.checkEvents();
   
   if (n == 1)
   {
